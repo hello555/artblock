@@ -1,41 +1,41 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Artblock
 
-## Getting Started
+Artblock is a modern, interactive web application designed for showcasing and sharing art. Built using Next.js and styled with Tailwind CSS, it provides a seamless user experience for users to view, create, and interact with content.
 
-First, run the development server:
+## Architecture
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The application is built on a component-based architecture, with the following key aspects:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Frontend Framework: Using Next.js, leveraging server-side rendering and API routing for improved performance.
+- Styling: Tailwind CSS for modern, utility-first CSS design.
+- State Management: React's useState and custom hooks where needed.
+- Image Optimization: Next.js's Image component for responsive and optimized image rendering.
+- Directory Structure:
+  /app: Contains all application logic and routing structure.
+  /public: Houses static assets such as images.
+  /components: Modular, reusable UI components like Navbar and Footer.
+- Database: Supabase Database stores user data such as their posted art and comments on other posts.
+- Authentication: OAuth authentication with Supabase for GitHub login.
+- Deployment: The application is hosted on Vercel, which supports serverless functions and automatic deployments from GitHub.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Approach and Methodology
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The development process followed these principles:
 
-## Learn More
+- Modularity: Breaking down the UI into reusable components, such as Post, Footer, and Navbar.
+- Responsive Design: Ensuring the app works seamlessly across devices using Tailwind's responsive utilities.
+- Accessibility: Adhering to web accessibility standards by using semantic HTML and readable styles.
+- Iterative Development: Prioritizing core functionality and gradually enhancing design and interactivity.
 
-To learn more about Next.js, take a look at the following resources:
+## How-to locally run the project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# artblock
-Test project
->>>>>>> a563c54ff3bc348f15338db3c22469cad06256e5
+1. Clone the repository
+   git clone https://github.com/hello555/artblock.git
+2. Install dependencies
+   npm install
+3. Setup Environment Variables
+   NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+4. Run the development server
+   npm run dev
+5. This will start the application on http://localhost:3000, try it on your browser.
