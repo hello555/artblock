@@ -39,7 +39,6 @@ export default function CreatePost() {
           </h1>
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            {/* Title */}
             <div>
               <label
                 htmlFor="title"
@@ -58,7 +57,6 @@ export default function CreatePost() {
               />
             </div>
 
-            {/* Content */}
             <div>
               <label
                 htmlFor="content"
@@ -77,7 +75,6 @@ export default function CreatePost() {
               />
             </div>
 
-            {/* Image Upload */}
             <div>
               <label
                 htmlFor="image"
@@ -95,7 +92,6 @@ export default function CreatePost() {
                 required
               />
 
-              {/* Display image preview if available */}
               {imagePreview && (
                 <div className="mt-4">
                   <Image
@@ -109,7 +105,6 @@ export default function CreatePost() {
               )}
             </div>
 
-            {/* Submit Button */}
             <div>
               <button
                 type="submit"
