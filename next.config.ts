@@ -1,8 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['avatars.githubusercontent.com', 'znprgctaduwiwunbbbnx.supabase.co'],  // Allow images from GitHub
+    domains: ['avatars.githubusercontent.com', 'znprgctaduwiwunbbbnx.supabase.co'],
+  },
+  webpack(config) {
+    config.resolve.extensions.push('.mjs');
+    return config;
   },
 };
 
