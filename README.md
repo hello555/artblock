@@ -30,12 +30,12 @@ The development process followed these principles:
 ## How-to locally run the project
 
 1. Clone the repository
-   git clone https://github.com/hello555/artblock.git
+   - git clone https://github.com/hello555/artblock.git
 2. Install dependencies
-   npm install
+   - npm install
 3. Setup Environment Variables
-   NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+   - NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+   - NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 4. Run the development server
-   npm run dev
+   - npm run dev
 5. This will start the application on http://localhost:3000, try it on your browser.
